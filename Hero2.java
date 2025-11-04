@@ -27,6 +27,9 @@ public class Hero2 extends Actor
             rotation += 180;
             setRotation(rotation);
         }
-        
+        if(isTouching(null))
+        {
+            setLocation(50, 50);
+        }
     }
 }
