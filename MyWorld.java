@@ -15,5 +15,7 @@ public class MyWorld extends World {
         
         Apple apple3 = new Apple();
         addObject(apple3, 300, 100);
+        
+        
     }
 }

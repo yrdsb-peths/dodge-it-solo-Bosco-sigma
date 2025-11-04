@@ -12,7 +12,7 @@ public class Hero2 extends Actor
      * Act - do whatever the Hero2 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    int dx = 1;
+    int dx = 3;
     int rotation = 180;
     public void act()
     {
@@ -27,9 +27,11 @@ public class Hero2 extends Actor
             rotation += 180;
             setRotation(rotation);
         }
-        if(isTouching(null))
+        if(isTouching(Apple.class))
         {
-            setLocation(50, 50);
+            EndGame end = new EndGame();
+            getWorld().addObject(end, getX() / 2, getY() / 2);
+            getWorld().removeObject(this);
         }
     }
 }
