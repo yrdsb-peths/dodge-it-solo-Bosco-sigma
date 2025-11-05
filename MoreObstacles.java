@@ -12,10 +12,11 @@ public class MoreObstacles extends Actor
      * Act - do whatever the MoreObstacles wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    int dx = 0;
+    int dy = 2;
     public void act()
     {
-        int dx = 0;
-        int dy = 2;
+        
         setLocation(getX() + dx, getY() + dy);
         if(isAtEdge())
         {

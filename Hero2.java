@@ -33,5 +33,11 @@ public class Hero2 extends Actor
             getWorld().addObject(end, getX() / 2, getY() / 2);
             getWorld().removeObject(this);
         }
+        if(isTouching(MoreObstacles.class))
+        {
+            EndGame end2 = new EndGame();
+            getWorld().addObject(end2, getX() /3, getY() / 3);
+            getWorld().removeObject(this);
+        }
     }
 }
