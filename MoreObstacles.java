@@ -14,6 +14,14 @@ public class MoreObstacles extends Actor
      */
     public void act()
     {
-        
+        int dx = 0;
+        int dy = 2;
+        setLocation(getX() + dx, getY() + dy);
+        if(isAtEdge())
+        {
+            dy++;
+            dy = -dy;
+            move(dy);
+        }
     }
 }
