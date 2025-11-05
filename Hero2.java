@@ -12,7 +12,7 @@ public class Hero2 extends Actor
      * Act - do whatever the Hero2 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    int dx = 3;
+    int dx = 4;
     int rotation = 180;
     public void act()
     {

@@ -14,13 +14,14 @@ public class MoreObstacles extends Actor
      */
     int dx = 0;
     int dy = 2;
+    int speed = 1;
     public void act()
     {
         
         setLocation(getX() + dx, getY() + dy);
         if(isAtEdge())
         {
-            dy++;
+            dy += speed;
             dy = -dy;
             move(dy);
         }
