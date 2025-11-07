@@ -13,7 +13,7 @@ public class Apple extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     int dx = 0;
-    int dy = 2;
+    int dy = 3;
     public void act()
     {
         setLocation(getX() + dx, getY() + dy);
